@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building an augmented reality application with the WebXR Device API</title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
+
+    <link rel="stylesheet" type="text/css" href="app.css" />
+
+    <!-- Web Application tags: -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.json" />
+
+    <style type="text/css">
+        #color-picker {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 0);
+            margin: 1em 1em 2em 1em;
+            z-index: 10;
+            display: block;
+            line-height: 2em;
+            text-align: center;
+            display: block;
+            width: 100%;
+            text-transform: uppercase;
+        }
+        #color-picker a {
+            box-sizing: border-box;
+            display: inline-block;
+            border: 0.1em solid #333;
+            padding: 0.3em;
+            margin: 0.2em;
+            min-width: 90px;
+            color: #333;
+            font-size: 0.9em;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.7);
+        }
+        #color-picker a.selected {
+            font-weight: bold;
+            border: 0.15em solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-picker">
+        <a id="color-black" class="selected" href="#">Black</a>
+        <a id="color-grey" href="#">Grey</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
+    <script src="three-plugins/OBJLoader.js"></script>
+    <script src="three-plugins/MTLLoader.js"></script>
+    <script src="three-plugins/GLTFLoader.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+    <script src="static.js"></script>
+</body>
+</html>

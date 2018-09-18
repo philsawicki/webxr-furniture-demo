@@ -1,0 +1,152 @@
+{
+    "extends": "tslint:recommended",
+    "rules": {
+        // Requires parentheses around the parameters of arrow function
+        // definitions:
+        "arrow-parens": false,
+
+        // Suggests to convert ‘() => { return x; }’ to ‘() => x’:
+        "arrow-return-shorthand": true,
+
+        // Warns for an awaited value that is not a Promise:
+        "await-promise": true,
+
+        // Enforces PascalCased class and interface names:
+        "class-name": true,
+
+        // Enforces formatting rules for single-line comments:
+        "comment-format": [true, "check-space"],
+
+        // Enforces documentation for important items be filled out:
+        "completed-docs": true,
+
+        // Enforces braces for ‘if’/‘for’/‘do’/‘while’ statements:
+        "curly": true,
+
+        // Enforces UTF-8 file encoding:
+        "encoding": true,
+
+        // Ensures the file ends with a newline:
+        "eofline": true,
+
+        // Requires a ‘for ... in’ statement to be filtered with an if
+        // statement:
+        "forin": true,
+
+        // Ensures proper spacing between import statement keywords:
+        "import-spacing": true,
+
+        // Enforces indentation with tabs or spaces:
+        "indent": [true, "spaces", 4],
+
+        // Enforces basic format rules for JSDoc comments:
+        "jsdoc-format": true,
+
+        // Requires lines to be under a certain max length:
+        "max-line-length": false,
+
+        // Disallows use of ‘arguments.callee’:
+        "no-arg": true,
+
+        // Disallows any type of assignment in conditionals:
+        "no-conditional-assignment": true,
+
+        // Disallows one or more blank lines in a row:
+        "no-consecutive-blank-lines": [true, 2],
+
+        // Bans the use of specified ‘console’ methods:
+        "no-console": false,
+
+        // Disallows multiple import statements from the same module:
+        "no-duplicate-imports": true,
+
+        // Warns if ‘super()’ appears twice in a constructor:
+        "no-duplicate-super": true,
+
+        // Prevents duplicate cases in switch statements:
+        "no-duplicate-switch-case": true,
+
+        // Disallows duplicate variable declarations in the same block scope:
+        "no-duplicate-variable": true,
+
+        // Disallows eval function invocations:
+        "no-eval": true,
+
+        // Promises returned by functions must be handled appropriately:
+        "no-floating-promises": true,
+
+        // Warns on use of ${ in non-template strings:
+        "no-invalid-template-strings": true,
+
+        // Disallow irregular whitespace outside of strings and comments:
+        "no-irregular-whitespace": true,
+
+        // Disallows reassigning parameters:
+        "no-parameter-reassignment": true,
+
+        // Forbids JSDoc which duplicates TypeScript functionality:
+        "no-redundant-jsdoc": true,
+
+        // Disallows unnecessary ‘return await’:
+        "no-return-await": true,
+
+        // Disallows shadowing variable declarations:
+        "no-shadowed-variable": true,
+
+        // Disallows trailing whitespace at the end of a line:
+        "no-trailing-whitespace": true,
+
+        // Warns if a type assertion does not change the type of an expression:
+        "no-unnecessary-type-assertion": true,
+
+        // Disallows unused expression statements:
+        "no-unused-expression": true,
+
+        // Disallows usage of variables before their declaration:
+        "no-use-before-declare": true,
+
+        // Disallows usage of the ‘var’ keyword:
+        "no-var-keyword": true,
+
+        // Disallows the use of require statements except in import statements:
+        "no-var-requires": true,
+
+        // Checks ordering of keys in object literals:
+        "object-literal-sort-keys": false,
+
+        // Requires that import statements be alphabetized and grouped:
+        "ordered-imports": true,
+
+        // Requires that variable declarations use ‘const’ instead of ‘let’ and
+        // ‘var’ if possible:
+        "prefer-const": true,
+
+        // Recommends a ‘for-of’ loop over a standard ‘for’ loop if the index is
+        // only used to access the array being iterated:
+        "prefer-for-of": true,
+
+        // Requires any function or method that returns a promise to be marked
+        // async:
+        "promise-function-async": true,
+
+        // Requires single or double quotes for string literals:
+        "quotemark": [true, "single"],
+
+        // Requires the radix parameter to be specified when calling ‘parseInt’:
+        "radix": true,
+
+        // Enforces consistent semicolon usage at the end of every statement:
+        "semicolon": [false, "never"],
+
+        // Require or disallow a space before function parenthesis:
+        "space-before-function-paren": [true, { "asyncArrow": "always" }],
+
+        // Requires or disallows trailing commas in array and object literals,
+        // destructuring assignments, function typings, named imports and
+        // exports and function parameters:
+        "trailing-comma": false,
+
+        // Requires ‘===’ and ‘!==’ in place of ‘==’ and ‘!=’.
+        "triple-equals": true
+    }
+}

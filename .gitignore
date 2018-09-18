@@ -1,0 +1,5 @@
+node_modules/*
+dist/app.js*
+dist/service-worker.js*
+server/fullchain.pem
+server/privkey.pem

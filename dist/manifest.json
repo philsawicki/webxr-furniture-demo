@@ -1,0 +1,21 @@
+{
+    "name": "Home decorating in AR",
+    "short_name": "Home decorating in AR",
+    "description": "Home decorating in Augmented Reality",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "images/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon-512x512.png",
+            "sizes": "521x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "index.html"
+}
