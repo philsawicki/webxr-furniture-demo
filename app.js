@@ -3231,7 +3231,7 @@
 
     const MODEL_GLTF_URL = 'assets/couch/sofa.gltf';
     const MODEL_NAME = 'sofa';
-    const MODEL_SCALE = 0.1;
+    const MODEL_SCALE = 0.125;
 
     function load3DText(message, options) {
         const fontOptions = {
@@ -3348,11 +3348,11 @@
         }
         async loadText() {
             const [titleText, description] = await Promise.all([
-                load3DText('SØFÄ', { fontFace: 'droid_sans', size: 0.10, bold: true }),
-                load3DText('1,200 kr.', { size: 0.05 })
+                load3DText('SØFÄ', { fontFace: 'droid_sans', size: 0.15, bold: true }),
+                load3DText('1,200 kr.', { size: 0.10 })
             ]);
-            description.translateX(0.0125);
-            description.translateY(-0.075);
+            description.translateX(0.000);
+            description.translateY(-0.125);
             this.textGroup = new THREE$1.Group();
             this.textGroup.add(titleText);
             this.textGroup.add(description);
@@ -3402,9 +3402,10 @@
                 const hit = hits[0];
                 const hitMatrix = new THREE$1.Matrix4().fromArray(hit.hitMatrix);
                 this.model.position.setFromMatrixPosition(hitMatrix);
+                this.model.translateY(-0.75);
                 this.textGroup.position.setFromMatrixPosition(hitMatrix);
-                this.textGroup.translateX(1.2);
-                this.textGroup.translateY(0.8);
+                this.textGroup.translateX(1.4);
+                this.textGroup.translateY(0.4);
                 lookAtOnY(this.model, this.camera);
                 const shadowMesh = this.scene.children.find(c => c.name === 'shadowMesh');
                 shadowMesh.position.y = this.model.position.y;
